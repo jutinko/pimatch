@@ -22,6 +22,7 @@ func main() {
 	for i := 0; i < index; i++ {
 		if input[i] != pi[i] {
 			fmt.Printf("\nthe next digit should be %c instead of %c", pi[i], input[i])
+			index = i
 			break
 		} else {
 			fmt.Printf("%c", input[i])
